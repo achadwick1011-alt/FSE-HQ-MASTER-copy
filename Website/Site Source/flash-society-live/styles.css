@@ -1592,6 +1592,148 @@ body {
 .reveal-d4 { transition-delay: 0.4s; }
 
 /* =============================================
+   MOBILE  ≤ 767px
+   ============================================= */
+@media (max-width: 767px) {
+  .nav-toggle {
+    width: 44px;
+    height: 44px;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .nav-links.open {
+    min-height: 100dvh;
+    padding: 120px 24px 48px;
+    justify-content: flex-start;
+    gap: 22px;
+  }
+
+  .nav-links.open a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 44px;
+    padding: 10px 14px;
+  }
+
+  .gallery-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .g-item {
+    height: auto;
+    aspect-ratio: 4 / 5;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 6px;
+  }
+}
+
+/* =============================================
+   PHONE  ≤ 430px
+   ============================================= */
+@media (max-width: 430px) {
+  .hero-content {
+    width: 100%;
+    max-width: 100%;
+    padding: 0 16px;
+  }
+
+  .hero-title {
+    font-size: clamp(2.2rem, 10.5vw, 2.8rem);
+    line-height: 1.05;
+    margin-bottom: 14px;
+  }
+
+  .hero-sub {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin: 0 auto 16px;
+    max-width: 32ch;
+  }
+
+  .hero-support {
+    font-size: 0.92rem;
+    line-height: 1.6;
+    color: rgba(245, 240, 232, 0.86);
+    margin: 0 auto 22px;
+    max-width: 34ch;
+  }
+
+  .hero-buttons {
+    gap: 12px;
+    max-width: 320px;
+    margin: 0 auto;
+  }
+
+  .hero-buttons .btn {
+    width: 100%;
+    min-height: 48px;
+    padding: 14px 20px;
+    font-size: 12px;
+    letter-spacing: 0.09em;
+  }
+
+  .hero-buttons .btn-outline-dark {
+    color: var(--text-light);
+    border-color: rgba(255,255,255,0.5);
+    background: rgba(255,255,255,0.02);
+  }
+
+  .pkg-grid {
+    gap: 14px;
+  }
+
+  .pkg-card {
+    padding: 28px 20px;
+  }
+
+  .pkg-name {
+    font-size: 1.65rem;
+  }
+
+  .pkg-price strong {
+    font-size: 2rem;
+  }
+
+  .pkg-list {
+    margin-bottom: 24px;
+  }
+
+  .pkg-list li {
+    font-size: 0.88rem;
+    padding: 10px 0;
+  }
+
+  .footer-grid {
+    gap: 28px;
+    margin-bottom: 32px;
+  }
+
+  .footer-brand,
+  .footer-col {
+    text-align: center;
+  }
+
+  .footer-col ul {
+    align-items: center;
+  }
+
+  .footer-col a,
+  .footer-col p {
+    overflow-wrap: anywhere;
+  }
+}
+
+/* =============================================
    TABLET  ≥ 768px
    ============================================= */
 @media (min-width: 768px) {
